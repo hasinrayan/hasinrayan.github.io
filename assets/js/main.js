@@ -35,7 +35,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -190,7 +190,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
@@ -241,7 +241,12 @@
       }
     }
   });
+window.onload = function () {
+  // Your additional JavaScript code for page load actions
 
+  // Hide the loader when the content is fully loaded
+  document.querySelector('.loader-container').style.display = 'none';
+};
   /**
    * Animation on scroll
    */
@@ -255,7 +260,7 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
   new PureCounter();
 
